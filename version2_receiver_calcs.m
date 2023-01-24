@@ -9,7 +9,7 @@ a2d_maxv = 3.3;
 BW = 10 * 10^6;
 [Pinmin_a2d, Pinmax_a2d] = a2dpower(a2d_res, a2d_maxv);
 %Tιμές των F, G για το νέο configuration που επιλέξαμε
-G = [25.5, -1.5, -11.8, -2.4, -6.05, 15 , - 0.85]; %in DB
+G = [25.5, -1.5, -8, -2.4, -6.05, 15 , - 0.85]; %in DB
 NF = [0.95, 1.5 , 8 , 2.4 ,  6.05 , 4 , 0.85];%in dB
 
 G_real = DBToReal(G);
@@ -46,7 +46,7 @@ Pinmax = min(Pinmax_A, Pinmax_B);
 DR = Pinmax - Pinmin_RX; %in dB
 
 %IP3 analysis of our system
-IP3 = [36.5, Inf, 11, Inf,18, 43, Inf];
+IP3 = [36.5, Inf, 27, Inf,18, 43, Inf];
 %IP3-equivalent values
 IP3eq = IP3equivalent(IP3, G); %dB
 IP3eq_real = DBToReal(IP3eq);

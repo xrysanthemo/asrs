@@ -8,7 +8,7 @@ a2d_res = 12;
 a2d_maxv = 3.3;
 BW = 10 * 10^6;
 [Pinmin_a2d, Pinmax_a2d] = a2dpower(a2d_res, a2d_maxv);
-%Tιμές των F, G για το configuration που επιλέξαμε
+%F,G values for our configuration
 G = [25.5, -1.5, -8, -2.4, 36, -6.05, - 0.85]; %in DB
 NF = [0.95, 1.5 , 8 , 2.4 , 0.65 , 6.05 , 0.85];%in dB
 
